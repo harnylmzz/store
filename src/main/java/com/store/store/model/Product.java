@@ -53,5 +53,8 @@ public class Product {
     @Column(name = "discount")
     private String discount;
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id")
+    private Category category;
 
 }

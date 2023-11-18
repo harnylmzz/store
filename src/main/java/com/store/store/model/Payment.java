@@ -40,4 +40,8 @@ public class Payment {
     @Column(name = "credit_card_cvv")
     private int creditCardCvv;
 
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+
 }

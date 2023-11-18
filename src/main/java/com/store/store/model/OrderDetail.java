@@ -45,4 +45,8 @@ public class OrderDetail {
 
     @Column(name = "bill_date")
     private Date billDate;
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinColumn(name = "order_id")
+    private Order order;
 }
