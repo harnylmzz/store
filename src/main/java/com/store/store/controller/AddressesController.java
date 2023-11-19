@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 @RequestMapping("/api/v1/address")
 @RestController
-public class AddressController {
+public class AddressesController {
 
     private AddressService addressService;
 
