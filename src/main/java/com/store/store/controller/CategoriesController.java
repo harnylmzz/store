@@ -6,6 +6,7 @@ import com.store.store.core.result.Result;
 import com.store.store.dto.requests.category.CreateCategoryRequest;
 import com.store.store.dto.requests.category.DeleteCategoryRequest;
 import com.store.store.dto.responses.category.GetAllCategoryResponses;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +25,7 @@ public class CategoriesController {
     }
 
     @PostMapping("/add")
-    public Result add(@RequestBody CreateCategoryRequest createCategoryRequest) {
+    public Result add(@RequestBody @Valid CreateCategoryRequest createCategoryRequest) {
         return this.categoryService.add(createCategoryRequest);
     }
 
