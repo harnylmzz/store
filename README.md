@@ -9,4 +9,12 @@
   ####   • Spring 
 
   ##### ■ Spring Boot 3
+  ##### ■ Spring Web
+  ##### ■ Sprin Boot Dev Tools
+
+  ####   • Spring Data
+  
+  ##### ■ Spring Data JPA
+
+  
 
