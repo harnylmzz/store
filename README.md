@@ -8,9 +8,9 @@
 
   ####   • Spring 
 
-  ##### * ■ Spring Boot 3
-  ##### * ■ Spring Web
-  ##### * ■ Sprin Boot Dev Tools
+  #####   * ■ Spring Boot 3
+  #####   * ■ Spring Web
+  #####   * ■ Sprin Boot Dev Tools
 
   ####   • Spring Data
   
