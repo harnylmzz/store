@@ -1,4 +1,4 @@
-package com.store.store.dto.responses.category;
+package com.store.store.business.dto.responses.category;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

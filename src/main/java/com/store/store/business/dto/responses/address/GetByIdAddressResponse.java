@@ -1,4 +1,4 @@
-package com.store.store.dto.requests.address;
+package com.store.store.business.dto.responses.address;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateAddressRequest {
-
-    private int id;
+public class GetByIdAddressResponse {
 
     private String country;
 
@@ -20,5 +18,4 @@ public class UpdateAddressRequest {
     private String address;
 
     private String zipCode;
-
 }

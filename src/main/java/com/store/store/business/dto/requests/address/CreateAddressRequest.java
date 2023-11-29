@@ -1,4 +1,4 @@
-package com.store.store.dto.requests.address;
+package com.store.store.business.dto.requests.address;
 
 import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
