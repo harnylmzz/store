@@ -1,6 +1,8 @@
 package com.store.store.controller;
 
 import com.store.store.business.abstracts.CategoryService;
+import com.store.store.business.dto.requests.category.UpdateCategoryRequest;
+import com.store.store.business.dto.responses.category.GetByIdCategoryResponses;
 import com.store.store.core.result.DataResult;
 import com.store.store.core.result.Result;
 import com.store.store.business.dto.requests.category.CreateCategoryRequest;
@@ -24,6 +26,11 @@ public class CategoriesController {
         return this.categoryService.getAll();
     }
 
+    @GetMapping("/getById")
+    public DataResult<GetByIdCategoryResponses> getById(int id) {
+        return this.categoryService.getById(id);
+    }
+
     @PostMapping("/add")
     public Result add(@RequestBody @Valid CreateCategoryRequest createCategoryRequest) {
         return this.categoryService.add(createCategoryRequest);
@@ -32,5 +39,10 @@ public class CategoriesController {
     @DeleteMapping("/delete")
     public Result delete(DeleteCategoryRequest deleteCategoryRequest) {
         return this.categoryService.delete(deleteCategoryRequest);
+    }
+
+    @PutMapping("/update")
+    public Result update(@RequestBody UpdateCategoryRequest updateCategoryRequest) {
+        return this.categoryService.update(updateCategoryRequest);
     }
 }

@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetByIdCustomerResponse {
-
+public class GetByIdCustomerResponses {
 
     private int id;
 

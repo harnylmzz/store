@@ -1,6 +1,5 @@
 package com.store.store.business.dto.requests.category;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -25,7 +24,6 @@ public class CreateCategoryRequest {
     @NotBlank
     private String description;
 
-    @URL
     @NotNull
     @NotBlank
     private String pictureUrl;

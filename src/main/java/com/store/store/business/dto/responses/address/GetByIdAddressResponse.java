@@ -9,13 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class GetByIdAddressResponse {
 
+    private int id;
+
     private String country;
 
     private String city;
 
-    private String street;
-
-    private String address;
-
-    private String zipCode;
 }
