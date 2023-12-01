@@ -1,10 +1,10 @@
 package com.store.store.business.abstracts;
 
-import com.store.store.business.dto.requests.customer.CreateCustomerRequest;
-import com.store.store.business.dto.requests.customer.DeleteCustomerRequest;
-import com.store.store.business.dto.requests.customer.UpdateCustomerRequest;
-import com.store.store.business.dto.responses.customer.GetAllCustomerResponses;
-import com.store.store.business.dto.responses.customer.GetByIdCustomerResponses;
+import com.store.store.dto.requests.customer.CreateCustomerRequest;
+import com.store.store.dto.requests.customer.DeleteCustomerRequest;
+import com.store.store.dto.requests.customer.UpdateCustomerRequest;
+import com.store.store.dto.responses.customer.GetAllCustomerResponses;
+import com.store.store.dto.responses.customer.GetByIdCustomerResponses;
 import com.store.store.core.result.DataResult;
 import com.store.store.core.result.Result;
 

@@ -1,4 +1,4 @@
-package com.store.store.business.dto.requests.invoice;
+package com.store.store.dto.responses.invoice;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UpdateInvoiceRequest {
+public class GetByIdInvoiceResponses {
 
     private int id;
 

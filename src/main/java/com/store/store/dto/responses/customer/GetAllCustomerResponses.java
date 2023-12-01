@@ -1,4 +1,4 @@
-package com.store.store.business.dto.responses.customer;
+package com.store.store.dto.responses.customer;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

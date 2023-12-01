@@ -1,4 +1,4 @@
-package com.store.store.business.dto.requests.invoice;
+package com.store.store.dto.requests.invoice;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

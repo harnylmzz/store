@@ -1,16 +1,16 @@
 package com.store.store.business.concretes;
 
 import com.store.store.business.abstracts.CategoryService;
-import com.store.store.business.dto.requests.category.UpdateCategoryRequest;
-import com.store.store.business.dto.responses.category.GetByIdCategoryResponses;
+import com.store.store.dto.requests.category.UpdateCategoryRequest;
+import com.store.store.dto.responses.category.GetByIdCategoryResponses;
 import com.store.store.config.modelmapper.ModelMapperService;
 import com.store.store.core.exceptions.DataNotFoundException;
 import com.store.store.core.result.DataResult;
 import com.store.store.core.result.Result;
 import com.store.store.core.result.SuccessResult;
-import com.store.store.business.dto.requests.category.CreateCategoryRequest;
-import com.store.store.business.dto.requests.category.DeleteCategoryRequest;
-import com.store.store.business.dto.responses.category.GetAllCategoryResponses;
+import com.store.store.dto.requests.category.CreateCategoryRequest;
+import com.store.store.dto.requests.category.DeleteCategoryRequest;
+import com.store.store.dto.responses.category.GetAllCategoryResponses;
 import com.store.store.model.Category;
 import com.store.store.repository.CategoryRepository;
 import lombok.AllArgsConstructor;

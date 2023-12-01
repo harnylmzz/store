@@ -2,11 +2,11 @@ package com.store.store.business.abstracts;
 
 import com.store.store.core.result.DataResult;
 import com.store.store.core.result.Result;
-import com.store.store.business.dto.requests.address.CreateAddressRequest;
-import com.store.store.business.dto.requests.address.DeleteAddressRequest;
-import com.store.store.business.dto.requests.address.UpdateAddressRequest;
-import com.store.store.business.dto.responses.address.GetAllAddressResponses;
-import com.store.store.business.dto.responses.address.GetByIdAddressResponse;
+import com.store.store.dto.requests.address.CreateAddressRequest;
+import com.store.store.dto.requests.address.DeleteAddressRequest;
+import com.store.store.dto.requests.address.UpdateAddressRequest;
+import com.store.store.dto.responses.address.GetAllAddressResponses;
+import com.store.store.dto.responses.address.GetByIdAddressResponse;
 
 import java.util.List;
 

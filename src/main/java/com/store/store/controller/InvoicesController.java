@@ -1,11 +1,11 @@
 package com.store.store.controller;
 
 import com.store.store.business.abstracts.InvoiceService;
-import com.store.store.business.dto.requests.invoice.CreateInvoiceRequest;
-import com.store.store.business.dto.requests.invoice.DeleteInvoiceRequest;
-import com.store.store.business.dto.requests.invoice.UpdateInvoiceRequest;
-import com.store.store.business.dto.responses.invoice.GetAllInvoiceResponses;
-import com.store.store.business.dto.responses.invoice.GetByIdInvoiceResponses;
+import com.store.store.dto.requests.invoice.CreateInvoiceRequest;
+import com.store.store.dto.requests.invoice.DeleteInvoiceRequest;
+import com.store.store.dto.requests.invoice.UpdateInvoiceRequest;
+import com.store.store.dto.responses.invoice.GetAllInvoiceResponses;
+import com.store.store.dto.responses.invoice.GetByIdInvoiceResponses;
 import com.store.store.core.result.DataResult;
 import com.store.store.core.result.Result;
 import jakarta.validation.Valid;

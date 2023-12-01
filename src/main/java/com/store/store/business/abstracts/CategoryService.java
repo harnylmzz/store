@@ -1,14 +1,13 @@
 package com.store.store.business.abstracts;
 
-import com.store.store.business.dto.requests.category.UpdateCategoryRequest;
-import com.store.store.business.dto.responses.category.GetByIdCategoryResponses;
+import com.store.store.dto.requests.category.UpdateCategoryRequest;
+import com.store.store.dto.responses.category.GetByIdCategoryResponses;
 import com.store.store.core.result.DataResult;
 import com.store.store.core.result.Result;
-import com.store.store.business.dto.requests.category.CreateCategoryRequest;
-import com.store.store.business.dto.requests.category.DeleteCategoryRequest;
-import com.store.store.business.dto.responses.category.GetAllCategoryResponses;
+import com.store.store.dto.requests.category.CreateCategoryRequest;
+import com.store.store.dto.requests.category.DeleteCategoryRequest;
+import com.store.store.dto.responses.category.GetAllCategoryResponses;
 
-import javax.xml.crypto.Data;
 import java.util.List;
 
 public interface CategoryService {

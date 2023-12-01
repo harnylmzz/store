@@ -1,4 +1,4 @@
-package com.store.store.business.dto.responses.customer;
+package com.store.store.dto.responses.address;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,11 +7,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetByIdCustomerResponses {
+public class GetByIdAddressResponse {
 
     private int id;
 
-    private String firstName;
+    private String country;
 
-    private String lastName;
+    private String city;
+
 }

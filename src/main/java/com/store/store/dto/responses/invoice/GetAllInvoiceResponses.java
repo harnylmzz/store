@@ -1,4 +1,5 @@
-package com.store.store.business.dto.responses.invoice;
+package com.store.store.dto.responses.invoice;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +10,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetByIdInvoiceResponses {
+public class GetAllInvoiceResponses {
 
     private int id;
 
