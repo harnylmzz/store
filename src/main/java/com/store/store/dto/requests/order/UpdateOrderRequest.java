@@ -23,7 +23,7 @@ public class UpdateOrderRequest {
 
     private String freight;
 
-    private int total;
+    private double total;
 
     private String tax;
 }

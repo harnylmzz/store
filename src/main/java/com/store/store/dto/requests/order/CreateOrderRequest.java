@@ -21,7 +21,7 @@ public class CreateOrderRequest {
 
     private String freight;
 
-    private int total;
+    private double total;
 
     private String tax;
 }

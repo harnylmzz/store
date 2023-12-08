@@ -36,7 +36,7 @@ public class Order {
     private String freight;
 
     @Column(name = "total")
-    private int total;
+    private double total;
 
     @Column(name = "tax")
     private String tax;
