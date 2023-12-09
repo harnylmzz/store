@@ -13,7 +13,6 @@ import org.hibernate.validator.constraints.URL;
 @NoArgsConstructor
 public class CreateCategoryRequest {
 
-
     @Size(min = 2, max = 50)
     @NotNull
     @NotBlank

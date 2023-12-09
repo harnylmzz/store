@@ -19,5 +19,6 @@ public class CreateInvoiceRequest {
     @Size(min = 9, max = 9)
     private String number;
 
+    
     private Date date;
 }

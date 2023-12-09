@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CreateAddressRequest {
 
-
     @NotBlank
     @NotNull
     @Size(min = 2, max = 50)
