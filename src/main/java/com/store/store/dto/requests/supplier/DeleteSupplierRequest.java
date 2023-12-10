@@ -1,4 +1,4 @@
-package com.store.store.dto.responses.order;
+package com.store.store.dto.requests.supplier;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,12 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetAllOrderResponses {
+public class DeleteSupplierRequest {
 
     private int id;
-
-    private int number;
-
-    private String status;
-
 }

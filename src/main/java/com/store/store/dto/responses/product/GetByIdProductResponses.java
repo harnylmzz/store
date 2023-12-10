@@ -19,6 +19,4 @@ public class GetByIdProductResponses {
 
     private double price;
 
-    private int unitInStock;
-
 }

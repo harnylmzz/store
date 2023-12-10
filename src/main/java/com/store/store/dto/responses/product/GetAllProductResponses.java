@@ -1,6 +1,5 @@
 package com.store.store.dto.responses.product;
 
-import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,5 +19,4 @@ public class GetAllProductResponses {
 
     private double price;
 
-    private int unitInStock;
 }

@@ -1,4 +1,4 @@
-package com.store.store.dto.responses.order;
+package com.store.store.dto.requests.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,12 +7,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetAllOrderResponses {
+public class UpdateUserRequest {
 
     private int id;
 
-    private int number;
+    private String password;
 
-    private String status;
-
+    private String email;
 }

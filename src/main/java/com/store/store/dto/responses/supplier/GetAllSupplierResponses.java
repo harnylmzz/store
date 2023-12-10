@@ -1,4 +1,4 @@
-package com.store.store.dto.responses.order;
+package com.store.store.dto.responses.supplier;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetAllOrderResponses {
+public class GetAllSupplierResponses {
 
     private int id;
 
-    private int number;
+    private String companyName;
 
-    private String status;
+    private String logoUrl;
 
 }
