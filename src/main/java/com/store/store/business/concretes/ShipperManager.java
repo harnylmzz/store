@@ -32,7 +32,8 @@ public class ShipperManager implements ShipperService {
     public DataResult<List<GetAllShipperResponses>> getAll() {
 
         List<Shipper> shippers = this.shipperRepository.findAll();
-        List<GetAllShipperResponses> getAllShipperResponses = shippers.stream().map(shipper -> this.modelMapperService.forResponse().map(shipper, GetAllShipperResponses.class)).collect(Collectors.toList());
+        List<GetAllShipperResponses> getAllShipperResponses = shippers.stream()
+                .map(shipper -> this.modelMapperService.forResponse().map(shipper, GetAllShipperResponses.class)).collect(Collectors.toList());
 
         return new DataResult<>(getAllShipperResponses, true, "Shippers listed.");
     }

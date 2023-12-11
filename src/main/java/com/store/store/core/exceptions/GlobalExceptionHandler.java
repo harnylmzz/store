@@ -38,5 +38,4 @@ public class GlobalExceptionHandler {
         return "Unknown error.";
     }
 
-
 }

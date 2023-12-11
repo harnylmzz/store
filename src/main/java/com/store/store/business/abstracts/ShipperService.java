@@ -21,4 +21,5 @@ public interface ShipperService {
     Result update(UpdateShipperRequest updateShipperRequest);
 
     Result delete(DeleteShipperRequest deleteShipperRequest);
+
 }

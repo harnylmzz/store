@@ -21,7 +21,6 @@ import java.util.List;
 public class AddressesController {
 
     private AddressService addressService;
-    private AddressRepository addressRepository;
 
     @GetMapping("/getall")
     public DataResult<List<GetAllAddressResponses>> getAll() {
