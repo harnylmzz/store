@@ -51,10 +51,10 @@
 #### ■ Cloning the Project:
 
 1. Use the following command in the terminal or command prompt to clone the project:
-   git clone https://github.com/harnylmzz/store.git
+##### ■  git clone https://github.com/harnylmzz/store.git
 2. Installing Dependencies:
-   cd store
-   mvn clean install
+##### ■  cd store
+##### ■  mvn clean install
 
 #### ■ Running the Application
 
