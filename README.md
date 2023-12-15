@@ -40,8 +40,34 @@
    + #### ■ Postman
 ---
 
+## Installation Steps
+
+#### ■ PostgreSQL Installation:
+
+1. PostgreSQL Database Setup
+2. Creating a Database
+3. Configuring Connection Information
+
+#### ■ Cloning the Project:
+
+1. Use the following command in the terminal or command prompt to clone the project:
+   git clone https://github.com/harnylmzz/store.git
+2. Installing Dependencies:
+   cd store
+   mvn clean install
+
+#### ■ Running the Application
+
+##### To start the Spring Boot application, follow this step:
+
+Using IDE (Integrated Development Environment)
+
+Once the application is running, you can access it by navigating to http://localhost:8080 in your web browser (assuming the default Spring Boot configuration). Adjust the port number if your application uses a different port.
+
+
+
 ## MIT License 
-##### Copyright (c) [2023] [Harun Yılmaz]
+##### Copyright (c) [2023] [[Harun Yılmaz](https://github.com/harnylmzz)]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
