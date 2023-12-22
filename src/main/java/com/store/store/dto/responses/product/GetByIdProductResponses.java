@@ -15,8 +15,6 @@ public class GetByIdProductResponses {
 
     private String description;
 
-    private String pictureUrl;
-
     private double price;
 
 }

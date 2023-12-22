@@ -62,4 +62,6 @@ public class CreateProductRequest {
     @NotBlank(message = "Discount cannot be blank")
     @Size(min = 2, max = 50, message = "Discount must be between 2 and 50 characters")
     private String discount;
+
+    private int categoryId;
 }

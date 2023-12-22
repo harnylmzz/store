@@ -15,8 +15,8 @@ public class GetAllProductResponses {
 
     private String description;
 
-    private String pictureUrl;
-
     private double price;
+
+    private int categoryId;
 
 }

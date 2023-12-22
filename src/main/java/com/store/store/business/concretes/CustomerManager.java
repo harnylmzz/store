@@ -51,7 +51,7 @@ public class CustomerManager implements CustomerService {
     }
 
     @Override
-    public Result add(@RequestBody @Valid CreateCustomerRequest createCustomerRequest) {
+    public Result add(CreateCustomerRequest createCustomerRequest) {
 
         Customer customer = this.modelMapperService.forRequest()
                 .map(createCustomerRequest, Customer.class);
