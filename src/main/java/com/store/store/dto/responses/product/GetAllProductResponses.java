@@ -17,6 +17,4 @@ public class GetAllProductResponses {
 
     private double price;
 
-    private int categoryId;
-
 }

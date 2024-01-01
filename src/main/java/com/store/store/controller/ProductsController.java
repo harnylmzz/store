@@ -8,13 +8,15 @@ import com.store.store.dto.requests.product.DeleteProductRequest;
 import com.store.store.dto.requests.product.UpdateProductRequest;
 import com.store.store.dto.responses.product.GetAllProductResponses;
 import com.store.store.dto.responses.product.GetByIdProductResponses;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api/v1/products")
 @AllArgsConstructor
 @CrossOrigin
 public class ProductsController {
@@ -32,17 +34,18 @@ public class ProductsController {
     }
 
     @PostMapping("/add")
-    Result add(CreateProductRequest createProductRequest) {
+    @ResponseStatus(code = HttpStatus.CREATED)
+    public Result add(@RequestBody @Valid CreateProductRequest createProductRequest) {
         return this.productService.add(createProductRequest);
     }
 
     @PutMapping("/update")
-    Result update(UpdateProductRequest updateProductRequest) {
+    public Result update(@RequestBody UpdateProductRequest updateProductRequest) {
         return this.productService.update(updateProductRequest);
     }
 
     @DeleteMapping("/delete")
-    Result delete(DeleteProductRequest deleteProductRequest) {
+    public Result delete(DeleteProductRequest deleteProductRequest) {
         return this.productService.delete(deleteProductRequest);
     }
 

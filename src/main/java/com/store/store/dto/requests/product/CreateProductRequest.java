@@ -23,7 +23,6 @@ public class CreateProductRequest {
     @Size(min = 2, max = 50, message = "Description must be between 2 and 50 characters")
     private String description;
 
-    @URL(message = "Picture URL must be a valid URL")
     @NotNull(message = "Picture URL cannot be null")
     @NotBlank(message = "Picture URL cannot be blank")
     private String pictureUrl;
@@ -63,5 +62,4 @@ public class CreateProductRequest {
     @Size(min = 2, max = 50, message = "Discount must be between 2 and 50 characters")
     private String discount;
 
-    private int categoryId;
 }

@@ -34,4 +34,6 @@ public class UpdateProductRequest {
     private String weight;
 
     private String discount;
+
+    private int categoryId;
 }
