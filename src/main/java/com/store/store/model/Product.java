@@ -25,34 +25,14 @@ public class Product {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "picture_url")
-    private String pictureUrl;
-
     @Column(name = "price")
     private double price;
 
     @Column(name = "units_in_stock")
     private int unitInStock;
 
-    @Column(name = "units_in_order")
-    private int unitInOrder;
-
-    @Column(name = "reorder_level")
-    private int reorderLevel;
-
-    @Column(name = "discontinued")
-    private boolean discontinued;
-
-    @Column(name = "size")
-    private String size;
-
-    @Column(name = "color")
-    private String color;
-
-    @Column(name = "weight")
-    private String weight;
-
-    @Column(name = "discount")
-    private String discount;
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 
 }

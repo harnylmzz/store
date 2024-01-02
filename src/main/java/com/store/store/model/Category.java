@@ -25,7 +25,7 @@ public class Category {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "picture_url")
-    private String pictureUrl;
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
+    private List<Product> products;
 
 }

@@ -40,7 +40,4 @@ public class Supplier {
     @Column(name = "logo_url")
     private String logoUrl;
 
-    @OneToMany(mappedBy = "supplier", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Address> addresses;
-
 }

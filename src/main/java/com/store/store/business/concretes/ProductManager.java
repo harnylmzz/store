@@ -3,6 +3,7 @@ package com.store.store.business.concretes;
 import com.store.store.business.abstracts.ProductService;
 import com.store.store.config.modelmapper.ModelMapperService;
 import com.store.store.core.result.DataResult;
+import com.store.store.core.result.ErrorResult;
 import com.store.store.core.result.Result;
 import com.store.store.core.result.SuccessResult;
 import com.store.store.dto.requests.product.CreateProductRequest;
@@ -10,7 +11,9 @@ import com.store.store.dto.requests.product.DeleteProductRequest;
 import com.store.store.dto.requests.product.UpdateProductRequest;
 import com.store.store.dto.responses.product.GetAllProductResponses;
 import com.store.store.dto.responses.product.GetByIdProductResponses;
+import com.store.store.model.Category;
 import com.store.store.model.Product;
+import com.store.store.repository.CategoryRepository;
 import com.store.store.repository.ProductRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -24,6 +27,7 @@ public class ProductManager implements ProductService {
 
     private ProductRepository productRepository;
     private ModelMapperService modelMapperService;
+    private CategoryRepository categoryRepository;
 
     @Override
     public DataResult<List<GetAllProductResponses>> getAll() {
@@ -51,13 +55,23 @@ public class ProductManager implements ProductService {
 
     @Override
     public Result add(CreateProductRequest createProductRequest) {
+        Category category = categoryRepository.findById(createProductRequest.getCategoryId())
+                .orElse(null);
 
-        Product product = modelMapperService.forRequest()
-                .map(createProductRequest, Product.class);
+        if (category != null) {
+            Product product = new Product();
+            product.setName(createProductRequest.getName());
+            product.setDescription(createProductRequest.getDescription());
+            product.setPrice(createProductRequest.getPrice());
+            product.setUnitInStock(createProductRequest.getUnitInStock());
+            product.setCategory(category);
 
-        productRepository.save(product);
+            productRepository.save(product);
 
-        return new SuccessResult("Product added.");
+            return new SuccessResult("Product added.");
+        } else {
+            return new ErrorResult("Category not found.");
+        }
     }
 
     @Override
@@ -69,19 +83,11 @@ public class ProductManager implements ProductService {
         product.setId(updateProductRequest.getId());
         product.setName(updateProductRequest.getName());
         product.setPrice(updateProductRequest.getPrice());
-        product.setColor(updateProductRequest.getColor());
-        product.setPictureUrl(updateProductRequest.getPictureUrl());
         product.setDescription(updateProductRequest.getDescription());
-        product.setDiscount(updateProductRequest.getDiscount());
-        product.setDiscontinued(updateProductRequest.isDiscontinued());
-        product.setReorderLevel(updateProductRequest.getReorderLevel());
-        product.setSize(updateProductRequest.getSize());
-        product.setUnitInOrder(updateProductRequest.getUnitInOrder());
         product.setUnitInStock(updateProductRequest.getUnitInStock());
-        product.setWeight(updateProductRequest.getWeight());
 
         productRepository.save(product);
-        return null;
+        return new SuccessResult("Product updated.");
     }
 
     @Override

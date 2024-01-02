@@ -15,25 +15,7 @@ public class UpdateProductRequest {
 
     private String description;
 
-    private String pictureUrl;
-
     private double price;
 
     private int unitInStock;
-
-    private int unitInOrder;
-
-    private int reorderLevel;
-
-    private boolean discontinued;
-
-    private String size;
-
-    private String color;
-
-    private String weight;
-
-    private String discount;
-
-    private int categoryId;
 }

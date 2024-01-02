@@ -25,7 +25,4 @@ public class Shipper {
     @Column(name = "phone")
     private String phone;
 
-    @OneToMany(mappedBy = "shipper", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Address> addresses;
-
 }

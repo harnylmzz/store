@@ -25,8 +25,4 @@ public class Customer extends User {
     @Column(name = "phone")
     private String phone;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Address> addresses;
-
-
 }
