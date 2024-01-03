@@ -25,4 +25,5 @@ public class Invoice {
 
     @Column(name = "date")
     private Date date;
+
 }

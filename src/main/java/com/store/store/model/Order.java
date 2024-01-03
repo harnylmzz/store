@@ -26,9 +26,6 @@ public class Order {
     @Column(name = "date")
     private Date date;
 
-    @Column(name = "status")
-    private String status;
-
     @Column(name = "comment")
     private String comment;
 

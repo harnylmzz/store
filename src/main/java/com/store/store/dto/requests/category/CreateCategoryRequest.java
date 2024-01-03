@@ -17,6 +17,4 @@ public class CreateCategoryRequest {
 
     private String description;
 
-    private String pictureUrl;
-
 }

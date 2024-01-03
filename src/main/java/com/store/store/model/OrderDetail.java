@@ -22,26 +22,14 @@ public class OrderDetail {
     @Column(name = "quantity")
     private int quantity;
 
-    @Column(name = "unit_price")
-    private double unitPrice;
-
-    @Column(name = "discount")
-    private double discount;
-
     @Column(name = "total")
     private double total;
 
     @Column(name = "size")
     private String size;
 
-    @Column(name = "color")
-    private String color;
-
     @Column(name = "fulfilled")
     private String fulfilled;
-
-    @Column(name = "status")
-    private String status;
 
     @Column(name = "bill_date")
     private Date billDate;

@@ -16,5 +16,4 @@ public class UpdateCategoryRequest {
 
     private String description;
 
-    private String pictureUrl;
 }
