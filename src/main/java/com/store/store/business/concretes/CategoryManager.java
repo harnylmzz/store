@@ -78,7 +78,6 @@ public class CategoryManager implements CategoryService {
         category.setId(updateCategoryRequest.getId());
         category.setName(updateCategoryRequest.getName());
         category.setDescription(updateCategoryRequest.getDescription());
-        category.setPictureUrl(updateCategoryRequest.getPictureUrl());
 
         categoryRepository.save(category);
 

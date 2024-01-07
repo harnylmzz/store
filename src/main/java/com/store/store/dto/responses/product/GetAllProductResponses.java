@@ -17,4 +17,6 @@ public class GetAllProductResponses {
 
     private double price;
 
+    private String categoryName;
+
 }

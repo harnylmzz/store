@@ -31,4 +31,21 @@ public class Product {
     @Column(name = "units_in_stock")
     private int unitInStock;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    @OneToMany(mappedBy = "product")
+    private List<Image> images;
+
+    @OneToMany(mappedBy = "product")
+    private List<Color> colors;
+
+    @OneToMany(mappedBy = "product")
+    private List<Discount> discounts;
+
+    @ManyToOne
+    @JoinColumn(name = "supplier_id")
+    private Supplier supplier;
+
 }

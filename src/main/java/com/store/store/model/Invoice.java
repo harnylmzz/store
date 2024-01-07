@@ -26,4 +26,8 @@ public class Invoice {
     @Column(name = "date")
     private Date date;
 
+    @OneToOne
+    @JoinColumn(name = "order_id")
+    private Order order;
+
 }

@@ -25,4 +25,7 @@ public class Customer extends User {
     @Column(name = "phone")
     private String phone;
 
+    @OneToMany(mappedBy = "customer")
+    private List<Address> addresses;
+
 }

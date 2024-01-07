@@ -36,4 +36,8 @@ public class Supplier {
 
     @Column(name = "email")
     private String email;
+
+    @OneToMany
+    @JoinColumn(name = "supplier_id")
+    private List<Product> products;
 }

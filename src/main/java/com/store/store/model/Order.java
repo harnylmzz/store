@@ -38,4 +38,13 @@ public class Order {
     @Column(name = "tax")
     private String tax;
 
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private Invoice invoice;
+
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private OrderDetail orderDetail;
+
+    @OneToOne(mappedBy = "order", cascade = CascadeType.ALL)
+    private Status status;
+
 }

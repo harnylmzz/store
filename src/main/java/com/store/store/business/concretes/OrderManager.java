@@ -71,7 +71,6 @@ public class OrderManager implements OrderService {
         order.setDate(updateOrderRequest.getDate());
         order.setFreight(updateOrderRequest.getFreight());
         order.setTotal(updateOrderRequest.getTotal());
-        order.setStatus(updateOrderRequest.getStatus());
         order.setComment(updateOrderRequest.getComment());
 
         this.orderRepository.save(order);

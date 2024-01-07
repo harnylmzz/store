@@ -15,8 +15,6 @@ public class CreateOrderRequest {
 
     private Date date;
 
-    private String status;
-
     private String comment;
 
     private String freight;

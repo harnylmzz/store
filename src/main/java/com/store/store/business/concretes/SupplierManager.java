@@ -74,7 +74,6 @@ public class SupplierManager implements SupplierService {
         supplier.setPhone(updateSupplierRequest.getPhone());
         supplier.setFax(updateSupplierRequest.getFax());
         supplier.setEmail(updateSupplierRequest.getEmail());
-        supplier.setLogoUrl(updateSupplierRequest.getLogoUrl());
 
         supplierRepository.save(supplier);
 

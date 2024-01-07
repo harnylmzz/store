@@ -17,8 +17,6 @@ public class UpdateOrderRequest {
 
     private Date date;
 
-    private String status;
-
     private String comment;
 
     private String freight;

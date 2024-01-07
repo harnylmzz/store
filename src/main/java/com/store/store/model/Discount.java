@@ -22,4 +22,8 @@ public class Discount {
     @Column(name="percent")
     private String percent;
 
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
+
 }

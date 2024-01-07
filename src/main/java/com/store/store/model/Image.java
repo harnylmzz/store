@@ -22,4 +22,8 @@ public class Image {
     @Column(name = "name")
     private String name;
 
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
+
 }

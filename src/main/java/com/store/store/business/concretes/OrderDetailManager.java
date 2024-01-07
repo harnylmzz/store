@@ -63,13 +63,9 @@ public class OrderDetailManager implements OrderDetailService {
 
         orderDetail.setId(updateOrderDetailRequest.getId());
         orderDetail.setQuantity(updateOrderDetailRequest.getQuantity());
-        orderDetail.setUnitPrice(updateOrderDetailRequest.getUnitPrice());
-        orderDetail.setDiscount(updateOrderDetailRequest.getDiscount());
         orderDetail.setTotal(updateOrderDetailRequest.getTotal());
         orderDetail.setSize(updateOrderDetailRequest.getSize());
-        orderDetail.setColor(updateOrderDetailRequest.getColor());
         orderDetail.setFulfilled(updateOrderDetailRequest.getFulfilled());
-        orderDetail.setStatus(updateOrderDetailRequest.getStatus());
         orderDetail.setBillDate(updateOrderDetailRequest.getBillDate());
 
         orderDetailRepository.save(orderDetail);
